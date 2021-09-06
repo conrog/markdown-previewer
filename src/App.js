@@ -5,8 +5,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>React App</h1>
         <Editor />
+        <Preview />
       </div>
     );
   }
@@ -17,6 +17,14 @@ const Editor = () => {
     <div>
       <p>Editor</p>
       <textarea></textarea>
+    </div>
+  );
+};
+
+const Preview = () => {
+  return (
+    <div>
+      <p>Preview</p>
     </div>
   );
 };

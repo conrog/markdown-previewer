@@ -30,13 +30,13 @@ const Editor = (props) => {
   return (
     <div>
       <p>Editor: </p>
-      <textarea value={props.text} onChange={props.onChange}></textarea>
+      <textarea value={props.text} onChange={props.onChange} id="editor"></textarea>
     </div>
   );
 };
 
 const Preview = (props) => {
-  return <div dangerouslySetInnerHTML={{ __html: marked(props.text) }}></div>;
+  return <div id="preview" dangerouslySetInnerHTML={{ __html: marked(props.text) }}></div>;
 };
 
 const placeholder = `# Welcome to my React Markdown Previewer!

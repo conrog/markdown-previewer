@@ -28,7 +28,7 @@ class App extends React.Component {
 
 const Editor = (props) => {
   return (
-    <div id="flex-container">
+    <div className="flex-container">
       <div id="editor-element">
         <h2>Editor</h2>
         <textarea value={props.text} onChange={props.onChange} id="editor"></textarea>
@@ -38,7 +38,14 @@ const Editor = (props) => {
 };
 
 const Preview = (props) => {
-  return <div id="preview" dangerouslySetInnerHTML={{ __html: marked(props.text) }}></div>;
+  return (
+    <div className="flex-container">
+      <div id="preview-element">
+        <h2>Preview</h2>
+        <div id="preview" dangerouslySetInnerHTML={{ __html: marked(props.text) }}></div>
+      </div>
+    </div>
+  );
 };
 
 const placeholder = `# Welcome to my React Markdown Previewer!

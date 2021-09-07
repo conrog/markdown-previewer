@@ -28,9 +28,11 @@ class App extends React.Component {
 
 const Editor = (props) => {
   return (
-    <div>
-      <p>Editor: </p>
-      <textarea value={props.text} onChange={props.onChange} id="editor"></textarea>
+    <div id="flex-container">
+      <div id="editor-element">
+        <h2>Editor</h2>
+        <textarea value={props.text} onChange={props.onChange} id="editor"></textarea>
+      </div>
     </div>
   );
 };

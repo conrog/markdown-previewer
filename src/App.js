@@ -30,7 +30,7 @@ const Editor = (props) => {
   return (
     <div className="flex-container">
       <div id="editor-element">
-        <h2>Editor</h2>
+        <h2 className="component-header">Editor</h2>
         <textarea value={props.text} onChange={props.onChange} id="editor"></textarea>
       </div>
     </div>
@@ -41,7 +41,7 @@ const Preview = (props) => {
   return (
     <div className="flex-container">
       <div id="preview-element">
-        <h2>Preview</h2>
+        <h2 className="component-header">Preview</h2>
         <div id="preview" dangerouslySetInnerHTML={{ __html: marked(props.text) }}></div>
       </div>
     </div>

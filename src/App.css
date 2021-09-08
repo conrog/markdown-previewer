@@ -49,3 +49,17 @@ body {
 #preview > pre {
   background-color: whitesmoke;
 }
+
+#preview > table {
+  border-collapse: collapse;
+}
+
+#preview > table > tbody > tr > td {
+  border: 1px solid black;
+  padding: 0.25rem;
+}
+
+#preview > table > thead > tr > th {
+  border: 1px solid black;
+  padding: 0.25rem;
+}
